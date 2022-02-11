@@ -5,14 +5,15 @@ Each line represents a instance and is organized in the following format:
 
 ```
 {
-  "tokens": [],
+  "tokens": ["We", "start", "from", "analyzing", "the", "procedures", ...],
   "ners": [
-    [0, 1, "Task"],
-    [0, 1, 3, 4, "Method"],
+    [16, 16, "Metric"], 
+    [13, 13, 16, 16, "Metric"],
     ...
   ],
   "relations": [
-    [1, 0, "Used-for"],
+    [0, 1, "Hyponym-of"],
+    ...
   ],
   "discontinuous": true
 }
