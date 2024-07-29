@@ -24,3 +24,9 @@ Entries in `ners` are organized as `[token_start, token_end, type]` for general 
 Entries in `relations` are organized as `[head_entity_index, tail_entity_index, type]`.
 
 `discontinuous` indicated whether there is a discontinuous entity in this sentence.
+## Convert to PURE format
+[PURE](https://github.com/princeton-nlp/PURE) is a simple but effective entity and relation extraction method. You can run `scripts/pure.py` to convert the data to the PURE format:
+
+```
+python scripts/pure.py --input_file={input_file_path} --output_file={output_file_path}
+```
